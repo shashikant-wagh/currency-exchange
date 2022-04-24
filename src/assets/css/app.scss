@@ -1,0 +1,57 @@
+$min-contrast-ratio: 2.5;
+
+$primary: #009688;
+$text-black: #404040;
+$navbar-light-color: $text-black;
+$navbar-light-active-color: $text-black;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": #c70d38,
+  "gray-900": #404040,
+);
+
+$custom-colors: (
+  "accent": #94c720,
+  "table-black": #8d8d8d,
+  "text-black": $text-black,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto" sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: map-get($theme-colors, "text-black");
+}
+
+.page-title {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.icon-sm {
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+table th {
+  color: map-get($theme-colors, "table-black");
+}
