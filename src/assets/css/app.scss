@@ -31,6 +31,9 @@ body {
 .page-title {
   font-weight: 600;
   font-size: 48px;
+  @media screen and (max-width: 576px) {
+    font-size: 32px !important;
+  }
 }
 
 .section-title {

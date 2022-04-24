@@ -90,7 +90,7 @@ const ExchangeForm = () => {
                 })}
               </select>
             </div>
-            <div className="col-auto mt-auto mb-0">
+            <div className="col-2 mt-auto mb-0">
               <span className="btn btn-outline-secondary disabled bg-white border-secondary">
                 <span className="material-icons text-primary align-bottom">
                   compare_arrows
@@ -119,7 +119,7 @@ const ExchangeForm = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-2  mt-md-auto mb-md-0 mt-sm-3">
+        <div className="col-md-2 mt-3 mt-md-auto mb-md-0 ">
           <button
             type="submit"
             className="btn btn-primary"

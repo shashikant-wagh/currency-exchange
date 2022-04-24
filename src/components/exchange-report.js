@@ -25,7 +25,7 @@ const ExchangeReport = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-3 ms-md-4 mt-md-0 mt-sm-4">
+      <div className="col-md-3 mt-4 ms-md-4 mt-md-0 ">
         <div className="card">
           <div className="card-body py-0">
             <ExchangeStats />
